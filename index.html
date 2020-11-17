@@ -5,10 +5,6 @@
     <!-- site information for SEO -->
     <!-- titolo pagina-->
     <title> VUE SLIDER </title>
-    <!-- sito madre -->
-     <!-- <link rel="canonical" href="">  -->
-     <!-- icona sito -->
-    <!-- <link rel="icon" href="img/">   -->
     <!-- descrizione SEO-->
     <meta name="description" content=" esercizio creare uno slider con vue ">
     <!-- parole chiave-->
@@ -28,12 +24,8 @@
 
     <!-- collegamenti al JS -->
 
-    <!-- JQUERY -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <!-- VUE -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <!-- JS -->
-    <script src="js/function.js" charset="utf-8"></script>
 
   </head>
   <body>
@@ -41,10 +33,10 @@
   <div class="container">
    <div class="row">
      <div class="col-2 d-flex justify-content-center align-items-center">
-       <a href="#"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+       <a href="#" @click=''><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
      </div>
      <div class="col">
-       <img :src="img" alt="">
+       <img :src="img[imagesIndexArray]" alt="">
      </div>
      <div class="col-2 d-flex justify-content-center align-items-center">
        <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
