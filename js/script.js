@@ -19,6 +19,11 @@ const sliderApp = new Vue ({
    data:{
      img: imagesArray.map( e => e.src),
      imagesIndexArray: 0,
+   },
+   methods:{
+     prev: function(){
+       this.
+     }
    }
 
 });
