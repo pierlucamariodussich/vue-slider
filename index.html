@@ -34,13 +34,13 @@
     <div class="container">
      <div class="row">
        <div class="col-2 d-flex justify-content-center align-items-center">
-         <a href="#" @click=''><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+         <a href="#" @click='prev'><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
        </div>
        <div class="col">
-         <img :src="img[imagesIndexArray]" alt="">
+         <img :src="images[imagesIndexArray]" alt="">
        </div>
        <div class="col-2 d-flex justify-content-center align-items-center">
-         <a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+         <a href="#" @click='next'><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
        </div>
      </div>
     </div>
