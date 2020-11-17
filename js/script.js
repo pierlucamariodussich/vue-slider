@@ -35,6 +35,7 @@ const sliderApp = new Vue ({
                                    this.imagesIndexArray = 0 :
                                    this.imagesIndexArray + 1; ;
      },
+
    }
 
 });

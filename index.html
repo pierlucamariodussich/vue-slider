@@ -32,26 +32,25 @@
   <!-- HTML -->
   <div id="root">
     <div class="container">
+      <img :src="images[imagesIndexArray]" alt="">
      <div class="row">
        <div class="col-2 d-flex justify-content-center align-items-center">
-         <a href="#" @click='prev'><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
+         <a href="#" @click='prev'><i class="fa fa-angle-double-left fa-4x" aria-hidden="true"></i></a>
        </div>
-       <div class="col">
-         <img :src="images[imagesIndexArray]" alt="">
-       </div>
-       <div class="col-2 d-flex justify-content-center align-items-center">
-         <a href="#" @click='next'><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-       </div>
-     </div>
-     <div class="row">
-       <div class=" col d-flex justify-content-center align-items-center">
-         <select class="" name="" v-model='imagesIndexArray'>
+       <div class="col point_select">
+         <div class="nav" v-model='imagesIndexArray'>
+             <a href="#" @click=''><i class="fas fa-circle"></i></a>
+             <a href="#" @click=''><i class="fas fa-circle"></i></a>
+             <a href="#" @click=''><i class="fas fa-circle"></i></a>
+             <a href="#" @click=''><i class="fas fa-circle"></i></a>
+         </div>
+         <!-- <select class="" name="" v-model='imagesIndexArray'>
            <option :value="el - 1" v-for='el in images.length' > {{el}} </option>
-
-         </select>
-
+         </select> -->
        </div>
-
+       <div class="col-2 d-flex justify-content-center align-items-center">
+         <a href="#" @click='next'><i class="fa fa-angle-double-right fa-4x" aria-hidden="true"></i></a>
+       </div>
      </div>
     </div>
   </div>
