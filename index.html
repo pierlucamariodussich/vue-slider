@@ -43,6 +43,16 @@
          <a href="#" @click='next'><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
        </div>
      </div>
+     <div class="row">
+       <div class=" col d-flex justify-content-center align-items-center">
+         <select class="" name="" v-model='imagesIndexArray'>
+           <option :value="el - 1" v-for='el in images.length' > {{el}} </option>
+
+         </select>
+
+       </div>
+
+     </div>
     </div>
   </div>
 

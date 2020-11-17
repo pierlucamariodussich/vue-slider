@@ -26,10 +26,14 @@ const sliderApp = new Vue ({
    },
    methods:{
      prev: function(){
-       this.imagesIndexArray-- ;
+       this.imagesIndexArray = (this.imagesIndexArray === 0) ?
+                                   this.imagesIndexArray = this.images.length - 1 :
+                                   this.imagesIndexArray - 1;
      },
      next: function(){
-       this.imagesIndexArray++ ;
+       this.imagesIndexArray = (this.imagesIndexArray === this.images.length -1) ?
+                                   this.imagesIndexArray = 0 :
+                                   this.imagesIndexArray + 1; ;
      },
    }
 
