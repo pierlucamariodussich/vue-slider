@@ -38,13 +38,10 @@
          <a href="#" @click='prev'><i class="fa fa-angle-double-left fa-4x" aria-hidden="true"></i></a>
        </div>
        <div class="col point_select">
-         <div class="nav" v-model='imagesIndexArray'>
-             <a href="#" @click=''><i class="fas fa-circle"></i></a>
-             <a href="#" @click=''><i class="fas fa-circle"></i></a>
-             <a href="#" @click=''><i class="fas fa-circle"></i></a>
-             <a href="#" @click=''><i class="fas fa-circle"></i></a>
+         <div class="nav"  v-model='imagesIndexArray'>
+             <a href="#" @click='' :value="el-1" v-for='el in images.length'><i class="fas fa-circle"></i></a>
          </div>
-         <!-- <select class="" name="" v-model='imagesIndexArray'>
+         <!-- <select class="" name="" v-model='el in imagesIndexArray'>
            <option :value="el - 1" v-for='el in images.length' > {{el}} </option>
          </select> -->
        </div>
