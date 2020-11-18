@@ -36,9 +36,9 @@ a:hover{
     background: rgba(0,0,0,.3);
     color: white;
 }
-.nav > a >i {
+.nav >.dot > a >i {
     margin: 0 20px;
 }
-.nav > a > i.active {
-    color:lime;
+.active {
+    color:orange;
 }
